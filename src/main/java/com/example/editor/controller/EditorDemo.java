@@ -52,7 +52,7 @@ public class EditorDemo {
 
         Resource resource = new ClassPathResource("/javacode");
         //将字符串写入到文件
-        File javaDir = new File(ResourceUtils.getURL("classpath:").getPath() + "/com/example/javaCode");
+        File javaDir = new File(ResourceUtils.getURL("classpath:").getPath() + "/javaCode");
         if (!javaDir.exists()) {
             javaDir.mkdirs();
         }
@@ -72,7 +72,7 @@ public class EditorDemo {
         //获取FileManager
         StandardJavaFileManager javaFileManager = compiler.getStandardFileManager(diagnosticListeners, null, null);
         Iterable it = javaFileManager.getJavaFileObjects(javaFile);
-        File distDir = new File(ResourceUtils.getURL("classpath:").getPath()+"/com/example/");
+        File distDir = new File(ResourceUtils.getURL("classpath:").getPath());
         if (!distDir.exists()) {
             distDir.mkdir();
         }
@@ -98,7 +98,7 @@ public class EditorDemo {
 
         //动态执行
         String className = ResourceUtils.getURL("classpath:").getPath()+"/com/example/".getClass().getName();
-        Class klass = Class.forName("com.example.editor.javaCode."+name+".java");
+        Class klass = Class.forName("javaCode."+name);
         Method method = klass.getDeclaredMethod("main", String[].class);
         Object object = method.invoke(klass, new String[]{null});
         map1 = MapUtil.toMap(1,null,object);
