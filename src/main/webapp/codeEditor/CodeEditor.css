@@ -1,0 +1,82 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.divfirst{
+	display:inline;
+}
+.divI{
+	width:650px;
+	height:500px;
+	margin-left:200px;
+/*	margin:0 auto;*/
+}
+.divII{
+	background-color:#5B5B5B;
+	width:50px;
+	height:500px;
+	float:left;
+}
+.divIII{
+	background-color:#2B2B2B;
+	width:600px;
+	height:500px;
+	position:relative;
+	float:left;
+}
+.divIV{
+	background-color:black;
+	width:600px;
+	height:55px;
+	position:absolute;
+	top:500px;
+/*	position:relative;
+	margin-top:500px;*/
+/*	margin:0 auto;*/
+}
+.inputI{
+	float:left;
+	border:1px solid white;
+	background-color:black;
+	height:35px;
+	width:130px;
+	font-size:17px;
+	color:white;
+	margin:10px auto 10px 10px;
+}
+.inputII{
+	float:right;
+	border:1px solid white;
+	background-color:green;
+	height:35px;
+	width:130px;
+	font-size:17px;
+	color:white;
+	margin:10px 10px 10px auto;
+}
+.p1{
+	font-size:30px;
+	position: absolute;
+    margin: -550px auto auto 900px;
+}
+.p2{
+	font-size:20px;
+	position: absolute;
+    margin: -500px auto auto 900px;
+}
+.p3{
+	font-size:14px;
+	color:white;
+	font-weight:100;
+}
+
+
+#container{
+	height: 500px;
+	width: 600px;
+}
+
+.monaco-aria-container{
+	position: absolute;
+	left: 550px;
+}
